@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <head>
+    <title>Contact</title>
+    <style>
+
+        .linkedin, .gmail, .github, .youtube {
+            text-shadow: 2px 2px 10px black;
+            text-align: justify;
+        }
+
+        .button-container {
+            margin-top: 50px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .linkedin {
+            background-color: #006097;
+            color: #ffffff;
+        }
+        
+        .gmail {
+            background-color: rgb(173, 30, 25);
+            color: #ffffff;
+        }
+        
+        .github {
+            background-color: #2F343A;
+            color: #ffffff;
+        }
+        
+        .youtube {
+            background-color: #B5091F;
+            color: #ffffff;
+        }
+
+.linkedin:hover {
+    background-color: #003B6D;
+}
+
+.gmail:hover {
+    background-color: rgb(150, 25, 20);
+}
+
+.github:hover {
+    background-color: #1F2327;
+}
+
+.youtube:hover {
+    background-color: #8F0A14;
+}
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button linkedin" 
+        onclick="window.open('https://www.linkedin.com/in/tom-inbar-159118248/', '_blank')">
+        <i class="fa fa-linkedin-square" aria-hidden="true"> LinkedIn</i>
+        </button>
+
+
+        <button class="button gmail" 
+        onclick="window.open('mailto:tomtom.inbar@gmail.com', '_blank')">
+        <i class="fa fa-envelope" aria-hidden="true"> Email</i>
+        </button>
+
+
+        <button class="button github" 
+        onclick="window.open('https://github.com/tomi-1997', '_blank')">
+        <i class="fa fa-github-square" aria-hidden="true"> GitHub</i>
+        </button>
+
+
+        <button class="button youtube" 
+        onclick="window.open('https://www.youtube.com/@tomas977/videos', '_blank')">
+        <i class="fa fa-youtube-play" aria-hidden="true"> Youtube</i>
+        </button>
+
+
+    </div>
+</body>
+</html>
