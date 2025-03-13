@@ -1,39 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css"> 
-      <title>Tom Inbar's website</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </head>
+<head>
+  <title>Tom Inbar's Website</title>
+  <script src="script.js"></script>
+  <style>
+    body 
+    {
+      display: flex;
+      margin: 0;
+      background-color: #1b1b1b;
+      color: #e0e0e0;
+      min-height: 100vh;
+      font-size: large;
+    }
+
+
+    nav 
+    {
+      width: 200px;
+      padding: 20px;
+      box-sizing: border-box;
+      position: -webkit-sticky; /* for Safari */
+      position: sticky;
+      top: 0;
+      align-self: flex-start; /* Sticky with flex box */
+    }
+
+    nav ul {
+      list-style-type: disc;
+      padding: 20px;
+    }
+
+    nav li {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: #e0e0e0;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    main {
+      flex-grow: 1;
+      width: 800px;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      border: 1px solid #333;
+      padding: 20px;
+
+    }
+
+    .flex-projects
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: auto; mobile */
+      grid-gap: 20px;
+      column-gap: 20px;
+      
+    }
+
+    .im-brd
+    {
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .im-brd-small
+    {
+      border: 2px solid #333;
+      border-radius: 25px;
+      margin-top: 10px;
+      width: 30%;
+    }
+
+  </style>
+</head>
 <body>
-<body class = "page-transition">
 
-    <h1 class="typewriter">Hey there, I'm Tom Inbar</h1>
+  <nav>
+    <h1>Tom Inbar</h1>
+    <ul>
+      <li><a href="#section1">About Me</a></li>
+      <li><a href="#section2">Projects</a></li>
+      <li><a href="#section3">Contact</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <section id="section1">
+      <h2>About</h2>  
+      <p class= "overwrite">About me!</p>
+    </section>
 
-    <nav>
-        <button onclick="loadPage('home')">
-        <i class="fa fa-home" aria-hidden="true"> Home</i>
-        </button>
+    <section id="section2">
+      <h2>Projects: Click an image to visit!</h2>
+      <!-- <p class= "overwrite">My projects.</p> -->
 
-        <button onclick="loadPage('projects')">
-        <i class="fa fa-terminal" aria-hidden="true"> Projects</i>
-        </button>
+      <div class="flex-projects">
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
 
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
 
-        <button onclick="loadPage('contact')">
-        <i class="fa fa-paper-plane" aria-hidden="true"> Contact Me</i>
-        </button>
-      </nav>
-    
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
 
-      <div id="content">
-        <div style="height: 100vh;"></div>
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
+
+        <div style="width: 300px;" >
+          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
+              <img class="im-brd" src="res/images/b-bob.png" alt=''>
+          </a>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+          <img class="im-brd-small" src="res/icons/android.png" alt=''>
+        </div>
       </div>
+    </section>
 
+    <section id="section3">
+      <h2>Contact</h2>
+      <p class= "overwrite">How you can contact me.</p>
+    </section>
+  </main>
 
-    <script src="script.js"></script> 
-  </body>
 </body>
 </html>
