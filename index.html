@@ -1,207 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tom Inbar's Website</title>
+  
+  <title>Tom Inbar's site</title>
+  
+  <meta name="viewport" content="width=device-width, min-scale=1.0">
+  <meta name="author" content="Tom Inbar">
+  <meta name="keywords" content="Software, Developer, Java, Python, C, C++, Android, Embedded, Backend">
+  <meta name="description" content="A website showcasing recent projects and skills.">
+
   <script src="script.js"></script>
-  <style>
-    body 
-    {
-      display: flex;
-      margin: 0;
-      background-color: #1b1b1b;
-      color: #e0e0e0;
-      min-height: 100vh;
-      font-size: large;
-    }
+  <link rel="stylesheet" href="style.css">
 
-
-    nav 
-    {
-      width: 200px;
-      padding: 20px;
-      box-sizing: border-box;
-      position: -webkit-sticky; /* for Safari */
-      position: sticky;
-      top: 0;
-      align-self: flex-start; /* Sticky with flex box */
-    }
-
-    nav ul {
-      list-style-type: disc;
-      padding: 20px;
-    }
-
-    nav li {
-      margin-bottom: 30px;
-    }
-
-    nav a {
-      color: #e0e0e0;
-    }
-
-    nav a:hover {
-      background-color: #333;
-    }
-
-    main {
-      flex-grow: 1;
-      width: 800px;
-      padding: 20px;
-    }
-
-    section {
-      margin-bottom: 20px;
-      border: 1px solid #333;
-      padding: 20px;
-
-    }
-
-    .flex-projects
-    {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      /* grid-template-columns: auto; mobile */
-      grid-gap: 20px;
-      column-gap: 20px;
-      
-    }
-
-    .im-brd
-    {
-      border: 2px solid #e0e0e0;
-      border-radius: 10px;
-      width: 300px;
-    }
-
-    .im-brd-small
-    {
-      border: 2px solid #333;
-      border-radius: 25px;
-      margin-top: 10px;
-      width: 30%;
-    }
-
-  </style>
 </head>
+
+
 <body>
 
+  <!-- Sticky navigation bar -->
   <nav>
     <h1>Tom Inbar</h1>
     <ul>
-      <li><a href="#section1">About Me</a></li>
+      <li><a href="#section1">About</a></li>
       <li><a href="#section2">Projects</a></li>
-      <li><a href="#section3">Contact</a></li>
+      <li><a href="#section3">Contact Me</a></li>
     </ul>
   </nav>
 
+
+  <!-- Sections to the right -->
   <main>
+
+    <!-- About -->
     <section id="section1">
       <h2>About</h2>  
-      <p class= "overwrite">About me!</p>
-    </section>
+      
+      <p>Hi! I am Tom Inbar, a software developer. <br>
+        I have a bachelor's degree in Computer Science and Mathematics.<br>
+        I enjoy solving 
+        
+        <a onclick="(()=>{document.getElementById('section4').style.display = 'block';})()" href="#section4" style="color: lightsteelblue; cursor: pointer;">
+          puzzles</a>, jogging, doing yoga, and of course, <em>coding!</em>
+        <br><br>
+        I am available for software development jobs; feel free to
+        <a href="#section3" style="color: lightsteelblue; cursor: pointer;">
+          contact me.</a>
+      </p>
 
-    <section id="section2">
-      <h2>Projects: Click an image to visit!</h2>
-      <!-- <p class= "overwrite">My projects.</p> -->
+      <!-- Skills -->
+      <div>
+        <h2>Technologies</h2>
+        <p>Programming Languages</p>
+        <img class='im-skill' loading="lazy" src="res/icons/java.png" title="Java">
+        <img class='im-skill' loading="lazy" src="res/icons/py.png" title="Python">
+        <img class='im-skill' loading="lazy" src="res/icons/c.png" title="C">
+        <img class='im-skill' loading="lazy" src="res/icons/cpp.png" title="C++">
+        <img class='im-skill' loading="lazy" src="res/icons/js.png" title="JavaScript">
+        <p>Databases</p>
+        <img class='im-skill' loading="lazy" src="res/icons/fbase.png" title="Firebase">
+        <img class='im-skill' loading="lazy" src="res/icons/mongo.png" title="MongoDB">
+        <p>Libraries</p>
+        <img class='im-skill' loading="lazy" src="res/icons/tf2.png" title="TensorFlow 2">
+        <img class='im-skill' loading="lazy" src="res/icons/ptorch.png" title="PyTorch">
+        <img class='im-skill' loading="lazy" src="res/icons/opencv.png" title="OpenCV">
+        <img class='im-skill' loading="lazy" src="res/icons/numpy.png" title="NumPy">
+        <img class='im-skill' loading="lazy" src="res/icons/flask.png" title="Flask">
+        <p>Also</p>
+        <img class='im-skill' loading="lazy" src="res/icons/docker.png" title="Docker">
+        <img class='im-skill' loading="lazy" src="res/icons/git.png" title="Git">
+        <img class='im-skill' loading="lazy" src="res/icons/linux.png" title="Linux">
+        <img class='im-skill' loading="lazy" src="res/icons/gcloud.png" title="Google Cloud">
+        <img class='im-skill' loading="lazy" src="res/icons/arduino.png" title="Arduino">
+        <img class='im-skill' loading="lazy" src="res/icons/android.png" title="Android">
 
-      <div class="flex-projects">
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
 
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
-
-        <div style="width: 300px;" >
-          <a href='https://github.com/' target='_blank' style="cursor: pointer;">
-              <img class="im-brd" src="res/images/b-bob.png" alt=''>
-          </a>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-          <img class="im-brd-small" src="res/icons/android.png" alt=''>
-        </div>
+        
       </div>
     </section>
 
-    <section id="section3">
-      <h2>Contact</h2>
-      <p class= "overwrite">How you can contact me.</p>
+    <!-- Projects -->
+    <section id="section2">
+      <h2>Projects</h2>
+      <p>Click an image to visit!</p>
+
+      <div class='flex-projects'>
+        <div style='width: 300px;' ><a href='https://play.google.com/store/apps/details?id=com.tis.square2' target='_blank' style='cursor: pointer;'><img class='im-brd' src='res/images/b-bob.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/play-store.png' loading='lazy'  alt=''>        </div>
+        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/New%20Space/HAB' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/cpp.jpeg' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/arduino.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/satellite.png' loading='lazy'  alt=''>        </div>
+        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/lemme-draw-that' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/lmdt.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/js.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/docker.png' loading='lazy'  alt=''>        </div>
+        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/AJ_Star_Detection' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/deep-learning.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/tf2.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/dl.png' loading='lazy'  alt=''>        </div>
+        <div style='width: 300px;' ><a href='https://github.com/JosefMamo12/Zuza-s' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/zuza.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/fbase.png' loading='lazy'  alt=''>        </div>
+        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/Advanced%20Pr/2' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/threadpool.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/linux.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/cpu.png' loading='lazy'  alt=''>        </div>
+      </div>
     </section>
+
+    <!-- Contact -->
+    <section id="section3">
+      <h2>Contact Me</h2>
+
+      <!-- LinkedIn -->
+      <img class="inviting" loading="lazy" src="res/icons/linked.png"
+        style="animation-delay: 1s;"
+        onclick="window.open('https://www.linkedin.com/in/tom-inbar-159118248/', '_blank')">
+        
+      <!-- Gmail -->
+      <img class="inviting" loading="lazy" src="res/icons/gmail.png"
+      style="animation-delay: 2s;"
+      onclick="window.open('mailto:tomtom.inbar@gmail.com', '_blank')">
+
+    </section>
+
+
+    <!-- Hidden sections, for those who click on 'puzzles' -->
+    <section id="section4" style="display: none;" >
+      <h2>Puzzle Games I Like</h2>
+      <ul>
+        <li>Patrick's Parabox</li>
+        <li>Snakebird</li>
+        <li>Baba Is You</li>
+        <li>Stephen's Sausage Roll</li>
+        <li>Life Goes On</li>
+        <li>A Good Snowman Is Hard To Build</li>
+        <li>Braid</li>
+        <li>Gorogoa</li>
+        <li>The Room</li>
+        <li>Portal</li>
+      </ul>
+    </section>
+
+    <!-- Footer notes -->
+    <p class="remark">
+      
+      Icons from <a target="_blank" href="https://icons8.com">Icons8</a>
+     | Source code <a target="_blank" href="https://github.com/Tomi-1997/personal-website">here</a>
+     | tomtom.inbar@gmail.com
+     | Tom Inbar, 2025. All rights reserved.
+     | Back to <a href="#">top</a>
+    </p>
+
   </main>
+
+  
 
 </body>
 </html>
