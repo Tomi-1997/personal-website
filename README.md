@@ -1,5 +1,6 @@
 Hi! 👀 <br>
-This is a personal website with three sections: <br>
-**Home** - Short summary of me, a sliding image with a pool of 15+ images, from different projects. <br>
-**Projects** - A couple of projects with description and a short gif for each one. <br>
-**Contact** - 4 button to contact me with. <br>
+This is my website, with these sections:<br>
+**About** - A brief paragraph about me, and icons of skills I used.<br>
+**Projects** - Clickable projects, with icons of tech used.<br>
+**Contact** - A linkedIn and gmail buttons.<br>
+**Puzzle Games** - A hidden section, revealed only to the curious.<br>
