@@ -11,7 +11,7 @@ body
   background-color: #1b1b1b;
   color: #e0e0e0;
   min-height: 100vh;
-  font-size: large;
+  font-size: x-large;
   font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
@@ -153,4 +153,17 @@ section
 {
   font-size: small;
   color: gray;
+}
+
+.animated-text
+{
+  display: inline-block;
+  animation: glow 3s infinite;
+}
+
+@keyframes glow 
+{
+  40% {
+    text-shadow: 0 0 16px #e0e0e0;
+  }
 }
