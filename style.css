@@ -12,11 +12,10 @@ body
   color: #e0e0e0;
   min-height: 100vh;
   font-size: x-large;
-  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 
-nav 
+nav /* Categories to the left */
 {
   width: 200px;
   padding: 20px;
@@ -63,7 +62,7 @@ section
 
 }
 
-.flex-projects
+.flex-projects /* Projects, 2 each on mobile, 3 else */
 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +72,7 @@ section
   
 }
 
-@media (max-width: 1000px) 
+@media (max-width: 1000px) /* Enlarge stuff on mobile */
 {
   .flex-projects
   {
@@ -94,7 +93,8 @@ section
   }
 }
 
-.im-brd
+
+.im-brd /* Project image */
 {
   border: 2px solid #e0e0e0;
   border-radius: 10px;
@@ -102,13 +102,46 @@ section
   opacity: 0.75;
 }
 
-.im-brd:hover
+.im-brd:hover /* Emphasize image on hover */
 {
     opacity: 1;
-    box-shadow: 0px 0px 10px #e0e0e0;
+    filter: drop-shadow(0px 0px 5px #e0e0e0);
 }
 
-.im-brd-small
+.image-container:hover .overlay /* Hide overlay on hover */
+{
+  opacity: 0;
+}
+
+.image-container /* Has 1. Project Image 2. Overlay */
+{
+  position: relative;
+  width: 300px;
+}
+
+
+.overlay /* Text box, at the bottom of project image */
+{
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 5%;
+  color: #e0e0e0;
+  width: 100%; /* Fit parent (sounds weird) */
+  padding: 5px;
+  text-align: center;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 10%,
+    rgb(64, 64, 64) 50%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 100%
+);
+}
+
+
+.im-brd-small /* Icon below project */
 {
   border: 2px solid #333;
   border-radius: 25px;
@@ -117,13 +150,13 @@ section
   opacity: 0.9;
 }
 
-.im-skill
+.im-skill /* Skills icon in section 1 */
 {
   border: 2px solid #333;
   border-radius: 25px;
 }
 
-.inviting
+.inviting /* Icons with animation to draw attention */
 {
     opacity: 0.6;
     animation: pulse 2s infinite;
@@ -155,7 +188,7 @@ section
   color: gray;
 }
 
-.animated-text
+.animated-text /* Text which glows sometimes */
 {
   display: inline-block;
   animation: glow 3s infinite;

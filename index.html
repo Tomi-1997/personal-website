@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   
   <title>Tom Inbar's site</title>
+  
   
   <meta name="viewport" content="width=device-width, min-scale=1.0">
   <meta name="author" content="Tom Inbar">
@@ -10,6 +11,11 @@
   <meta name="description" content="A website showcasing recent projects and skills.">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/res/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/res/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/res/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/res/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/res/favicon/site.webmanifest" />
 
 </head>
 
@@ -71,10 +77,10 @@
         <img class='im-skill' loading="lazy" src="res/icons/gcloud.png" title="Google Cloud">
         <img class='im-skill' loading="lazy" src="res/icons/arduino.png" title="Arduino">
         <img class='im-skill' loading="lazy" src="res/icons/android.png" title="Android">
-        <img class='im-skill' loading="lazy" src="res/icons/feizey.png" title="My nephew">
+        <img class='im-skill' loading="lazy" src="res/icons/feizey.png" title="My nephew"> <!-- Very handsome -->
 
 
-        
+        <!-- Skills END -->
       </div>
     </section>
 
@@ -82,14 +88,109 @@
     <section id="section2">
       <h2>Projects</h2>
       <p>Click an image to visit!</p>
-
       <div class='flex-projects'>
-        <div style='width: 300px;' ><a href='https://play.google.com/store/apps/details?id=com.tis.square2' target='_blank' style='cursor: pointer;'><img class='im-brd' src='res/images/b-bob.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/play-store.png' loading='lazy'  alt=''>        </div>
-        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/New%20Space/HAB' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/cpp.jpeg' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/arduino.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/satellite.png' loading='lazy'  alt=''>        </div>
-        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/lemme-draw-that' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/lmdt.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/js.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/docker.png' loading='lazy'  alt=''>        </div>
-        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/AJ_Star_Detection' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/deep-learning.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/tf2.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/dl.png' loading='lazy'  alt=''>        </div>
-        <div style='width: 300px;' ><a href='https://github.com/JosefMamo12/Zuza-s' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/zuza.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/fbase.png' loading='lazy'  alt=''>        </div>
-        <div style='width: 300px;' ><a href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/Advanced%20Pr/2' target='_blank' style='cursor: pointer;'>              <img class='im-brd' src='res/images/threadpool.png' loading='lazy' alt=''>          </a>          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/linux.png' loading='lazy'  alt=''>          <img class='im-brd-small' src='res/icons/cpu.png' loading='lazy'  alt=''>        </div>
+        
+        <!-- Mobile Game -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='Google App Store Reference'
+             href='https://play.google.com/store/apps/details?id=com.tis.square2'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/b-bob.png' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Mobile Game</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/play-store.png' loading='lazy'  alt=''>
+        </div>
+
+
+        <!-- Embedded -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/New%20Space/HAB'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/cpp.jpeg' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">RT Flight</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/arduino.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/satellite.png' loading='lazy'  alt=''>
+        </div>
+
+
+        <!-- Web App -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/Tomi-1997/lemme-draw-that'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/lmdt.png' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Web Application</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/js.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/docker.png' loading='lazy'  alt=''>
+        </div>
+
+
+        <!-- Coin Classification -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/Tomi-1997/AJ_Star_Detection'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/deep-learning.png' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Coin Classification</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/tf2.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/dl.png' loading='lazy'  alt=''>
+        </div>
+
+
+        <!-- Business Application -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/JosefMamo12/Zuza-s'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/zuza.png' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Business Application</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/fbase.png' loading='lazy'  alt=''>
+        </div>
+
+        <!-- Load Balancer -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/Tomi-1997/CS-3rdYear/tree/main/Advanced%20Pr/2'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/threadpool.png' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Load Balancer</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/linux.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/cpu.png' loading='lazy'  alt=''>
+        </div>
+      
+      <!-- Projects END -->
       </div>
     </section>
 
@@ -100,12 +201,14 @@
       <!-- LinkedIn -->
       <img class="inviting" loading="lazy" src="res/icons/linked.png"
         style="animation-delay: 1s;"
-        onclick="window.open('https://www.linkedin.com/in/tom-inbar-159118248/', '_blank')">
+        onclick="window.open('https://www.linkedin.com/in/tom-inbar-159118248/', '_blank')"
+        title="LinkedIn">
         
       <!-- Gmail -->
       <img class="inviting" loading="lazy" src="res/icons/gmail.png"
       style="animation-delay: 2s;"
-      onclick="window.open('mailto:tomtom.inbar@gmail.com', '_blank')">
+      onclick="window.open('mailto:tomtom.inbar@gmail.com', '_blank')"
+      title="Gmail">
 
     </section>
 
