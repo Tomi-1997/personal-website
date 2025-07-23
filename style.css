@@ -156,6 +156,32 @@ section
   border-radius: 25px;
 }
 
+.im-app /* Apps icon in section 1 */
+{
+  border: 2px outset #666;
+  border-radius: 20px;
+}
+
+.im-app:hover /* Emphasize image's border on hover & a little pop */
+{
+  border-color: #ccc;
+  animation: pop 0.25s ease-in-out;
+}
+
+@keyframes pop 
+{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .inviting /* Icons with animation to draw attention */
 {
     opacity: 0.6;

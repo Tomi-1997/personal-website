@@ -41,12 +41,29 @@
         I enjoy solving 
         
         <a onclick="(()=>{document.getElementById('section4').style.display = 'block';})()" href="#section4" style="color: lightsteelblue; cursor: pointer;">
-          puzzles</a>, jogging, doing yoga, and of course, <em>coding!</em>
+          puzzles</a>, jogging, and doing yoga.
         <br><br>
-        I am available for software development jobs; feel free to
+        Have an exciting opportunity? feel free to
         <a class="animated-text" href="#section3" style="color: lightsteelblue; cursor: pointer;">
           contact me</a>.
       </p>
+
+      <!-- Apps -->
+       <div>
+        <h2>Apps</h2>
+
+        <!-- LinkedIn -->
+        <img class="im-app" loading="lazy" src="res/apps/memory.webp"
+          onclick="window.open('https://play.google.com/store/apps/details?id=com.tis.memorycardgame', '_blank')"
+          title="Memory: Match & Progress">
+          
+        <!-- Gmail -->
+        <img class="im-app" loading="lazy" src="res/apps/bbob.webp"
+        onclick="window.open('https://play.google.com/store/apps/details?id=com.tis.square2', '_blank')"
+        title="Bouncing Bob">
+
+      <!-- Apps END -->
+       </div>
 
       <!-- Skills -->
       <div>
@@ -73,10 +90,18 @@
         <img class='im-skill' loading="lazy" src="res/icons/gcloud.png" title="Google Cloud">
         <img class='im-skill' loading="lazy" src="res/icons/arduino.png" title="Arduino">
         <img class='im-skill' loading="lazy" src="res/icons/android.png" title="Android">
-        <img class='im-skill' loading="lazy" src="res/icons/feizey.png" title="My nephew"> <!-- Very handsome -->
+        <img id="soundHover" class='im-app' loading="lazy" src="res/icons/feizey.png" title="My nephew" style="cursor: pointer;"> <!-- Very handsome -->
+        <audio id='mySound' src='res/sfx/bark.mp3'/>
 
-
+        <script>
+          soundHover.addEventListener('click', function() 
+          {
+            var audio = document.getElementById("mySound");
+            audio.play();
+          });
+        </script>
         <!-- Skills END -->
+        
       </div>
     </section>
 
@@ -86,22 +111,6 @@
       <p>Click an image to visit!</p>
       <div class='flex-projects'>
         
-        <!-- Mobile Game -->
-        <div class="project-container" style='width: 300px;' >
-          <div class="image-container">
-            <a title='Google App Store Reference'
-             href='https://play.google.com/store/apps/details?id=com.tis.square2'
-             target='_blank' style='cursor: pointer;'>
-            
-            <img class='im-brd' src='res/images/b-bob.png' loading='lazy' alt=''>
-            </a>
-            <div class="overlay">Mobile Game</div>
-          </div>
-          <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>
-          <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>
-          <img class='im-brd-small' src='res/icons/play-store.png' loading='lazy'  alt=''>
-        </div>
-
 
         <!-- Embedded -->
         <div class="project-container" style='width: 300px;' >
@@ -112,7 +121,7 @@
             
             <img class='im-brd' src='res/images/cpp.jpeg' loading='lazy' alt=''>
             </a>
-            <div class="overlay">RT Flight</div>
+            <div class="overlay">RT Flight & Ground Station</div>
           </div>
           <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>
           <img class='im-brd-small' src='res/icons/arduino.png' loading='lazy'  alt=''>
@@ -129,7 +138,7 @@
             
             <img class='im-brd' src='res/images/lmdt.png' loading='lazy' alt=''>
             </a>
-            <div class="overlay">Web Application</div>
+            <div class="overlay">Real-Time Drawing Rooms</div>
           </div>
           <img class='im-brd-small' src='res/icons/py.png' loading='lazy'  alt=''>
           <img class='im-brd-small' src='res/icons/js.png' loading='lazy'  alt=''>
@@ -163,7 +172,7 @@
             
             <img class='im-brd' src='res/images/zuza.png' loading='lazy' alt=''>
             </a>
-            <div class="overlay">Business Application</div>
+            <div class="overlay">Business Application Demo</div>
           </div>
           <img class='im-brd-small' src='res/icons/android.png' loading='lazy'  alt=''>
           <img class='im-brd-small' src='res/icons/java.png' loading='lazy'  alt=''>
@@ -179,7 +188,7 @@
             
             <img class='im-brd' src='res/images/threadpool.png' loading='lazy' alt=''>
             </a>
-            <div class="overlay">Load Balancer</div>
+            <div class="overlay">Multi-Threaded Load Balancer</div>
           </div>
           <img class='im-brd-small' src='res/icons/c.png' loading='lazy'  alt=''>
           <img class='im-brd-small' src='res/icons/linux.png' loading='lazy'  alt=''>
