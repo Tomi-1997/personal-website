@@ -12,29 +12,34 @@ body
   color: #e0e0e0;
   min-height: 100vh;
   font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
 nav /* Categories to the left */
 {
   width: 200px;
-  padding: 20px;
+  padding: 32px;
   box-sizing: border-box;
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
   align-self: flex-start; /* Sticky with flex box */
+  
 }
 
 nav ul 
 {
-  list-style-type: disc;
-  padding: 20px;
+  list-style-type: square;
+  padding: 32px;
+  
+  border: 1px solid #333;
+  border-radius: 32px;
 }
 
 nav li 
 {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 nav a 
@@ -57,8 +62,9 @@ main
 section 
 {
   margin-bottom: 20px;
-  border: 1px solid #333;
+  border: 1px solid #777;
   padding: 20px;
+  border-radius: 64px;
 
 }
 
@@ -160,12 +166,16 @@ section
 {
   border: 2px outset #666;
   border-radius: 20px;
+  width: 256px;
+  opacity: 0.75;
 }
 
 .im-app:hover /* Emphasize image's border on hover & a little pop */
 {
   border-color: #ccc;
   animation: pop 0.25s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
 }
 
 @keyframes pop 
@@ -174,7 +184,7 @@ section
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.01);
     }
     100% {
         transform: scale(1);
