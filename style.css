@@ -15,31 +15,46 @@ body
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h1
+{
+  padding: 16px;
+  background: linear-gradient(315deg, skyblue, plum );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 8px;
+}
+
+#h-div
+{
+  border-radius: 32px;
+  border: 1px solid #777;
+}
+
 
 nav /* Categories to the left */
 {
-  width: 200px;
+  width: 20%;
   padding: 32px;
   box-sizing: border-box;
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
   align-self: flex-start; /* Sticky with flex box */
-  
 }
 
 nav ul 
 {
-  list-style-type: square;
+  list-style-type: circle;
   padding: 32px;
   
-  border: 1px solid #333;
+  border: 1px solid #777;
   border-radius: 32px;
 }
 
 nav li 
 {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 nav a 
@@ -55,7 +70,6 @@ nav a:hover
 main 
 {
   flex-grow: 1;
-  width: 800px;
   padding: 20px;
 }
 
@@ -86,16 +100,27 @@ section
   }
   nav
   {
-    width: 300px;
-    margin-left: 20px;
+    width: 100%;
+    position: static;
+
+    margin-top: 32px;
+  }
+  h1
+  {
+    text-align: center;
+  }
+  nav li 
+  {
+    margin-left: 16px;
   }
   body
   {
     font-size: xx-large;
+    display: grid;
   }
   .inviting
   {
-    width: 40%;
+    width: 25%;
   }
 }
 
