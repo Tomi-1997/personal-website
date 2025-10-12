@@ -23,14 +23,16 @@
     <div id="h-div"> <h1>Tom Inbar</h1> </div>
     <ul>
       <li><a href="#section1">About</a></li>
+      <li><a href="https://play.google.com/store/apps/developer?id=Tom+Inbar">Play Store</a></li>
       <li><a href="#section2">Projects</a></li>
-      <li><a href="#section3">Contact Me</a></li>
+      <li><a href="mailto:tomtom.inbar@gmail.com">Contact Me</a></li>
     </ul>
   </nav>
 
 
-  <!-- Sections to the right -->
+  <!-- Content -->
   <main>
+
 
     <!-- About -->
     <section id="section1">
@@ -43,29 +45,76 @@
         <a onclick="(()=>{document.getElementById('section4').style.display = 'block';})()" href="#section4" style="color: lightsteelblue; cursor: pointer;">
           puzzles</a>, jogging, and doing yoga.
         <br><br>
-        Have an exciting opportunity? feel free to
-        <a class="animated-text" href="#section3" style="color: lightsteelblue; cursor: pointer;">
-          contact me</a>.
-      </p>
 
-      <!-- Apps -->
+
+
+        <!-- About: Contact & GitHub -->
+        <p>
+          <em>You can find me here:</em></p>
+        <div>
+        <a href="mailto:tomtom.inbar@gmail.com">
+            <img class= "inviting" 
+                src="res/icons/gmail.png" 
+                alt="Gmail" 
+                style="animation-delay: 1s;"
+                loading="lazy"
+                title="Gmail"
+                /></a>
+
+
+        <a href="https://www.linkedin.com/in/tom-inbar-159118248/">
+            <img class= "inviting" 
+                src="res/icons/linked.png" 
+                alt="LinkedIn" 
+                style="animation-delay: 2s;"
+                loading="lazy"
+                title="LinkedIn"
+                /></a>
+            
+        <a href="https://github.com/tomi-1997">
+          <img class= "inviting" 
+              src="res/icons/github.png" 
+              alt="GitHub" 
+              style="animation-delay: 3s;"
+              loading="lazy"
+              title="GitHub"
+              /></a>
+        </div>
+        <!-- About: Contact END -->
+
+
+
+      <!-- About: Apps -->
        <div>
-        <h2>Apps</h2>
+        <h2>Check my apps</h2>
 
         <!-- Memory Puzzle App -->
-        <img class="im-app" loading="lazy" src="https://play-lh.googleusercontent.com/KCMxf0YeS7m3GkvyojuXBlGUQf0Px4vW6D0fsL27tS606XSoa_XN41VvC2XTleuAQ0EtYCQxHV94QAPvqE4uCw=w480-h960"
-          onclick="window.open('https://play.google.com/store/apps/details?id=com.tis.memorycardgame', '_blank')"
-          title="Memory: Match & Progress">
+         <a href="https://play.google.com/store/apps/details?id=com.tis.memorycardgame">
+            <img 
+              class="im-app" 
+              loading="lazy" 
+              src="https://play-lh.googleusercontent.com/KCMxf0YeS7m3GkvyojuXBlGUQf0Px4vW6D0fsL27tS606XSoa_XN41VvC2XTleuAQ0EtYCQxHV94QAPvqE4uCw=w480-h960"
+              title="Memory: Match & Progress"
+            /></a>
+
           
         <!-- Arcade Platformer App -->
-        <img class="im-app" loading="lazy" src="https://play-lh.googleusercontent.com/RO4fWF_3NHSq7hwopNpIIrpt1equj425kubKsWl22DerU5ryQ8tG9-3vmhiFdBddQUU=w480-h960"
-        onclick="window.open('https://play.google.com/store/apps/details?id=com.tis.square2', '_blank')"
-        title="Bouncing Bob">
+         <a href="https://play.google.com/store/apps/details?id=com.tis.square2">
+          <img 
+            class="im-app" 
+            loading="lazy" 
+            src="https://play-lh.googleusercontent.com/RO4fWF_3NHSq7hwopNpIIrpt1equj425kubKsWl22DerU5ryQ8tG9-3vmhiFdBddQUU=w480-h960"
+            title="Bouncing Bob"
+          />
+        </a>
 
-      <!-- Apps END -->
+      <!-- About: Apps END -->
        </div>
 
-      <!-- Skills -->
+
+
+
+      <!-- About: Skills -->
       <div>
         <h2>Technologies</h2>
         <p>Programming Languages</p>
@@ -102,15 +151,19 @@
             audio.play();
           });
         </script>
-        <!-- Skills END -->
+        <!-- About: Skills END -->
         
       </div>
     </section>
 
+
+
+
+
     <!-- Projects -->
     <section id="section2">
-      <h2>Projects</h2>
-      <p>Click an image to visit!</p>
+      <h2>More Projects</h2>
+      <p>Click an image for additional information</p>
       <div class='flex-projects'>
         
 
@@ -148,7 +201,7 @@
         </div>
 
 
-        <!-- Coin Classification -->
+        <!-- DL Coin Classification -->
         <div class="project-container" style='width: 300px;' >
           <div class="image-container">
             <a title='GitHub Link'
@@ -201,23 +254,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="section3">
-      <h2>Contact Me</h2>
 
-      <!-- LinkedIn -->
-      <img class="inviting" loading="lazy" src="res/icons/linked.png"
-        style="animation-delay: 1s;"
-        onclick="window.open('https://www.linkedin.com/in/tom-inbar-159118248/', '_blank')"
-        title="LinkedIn">
-        
-      <!-- Gmail -->
-      <img class="inviting" loading="lazy" src="res/icons/gmail.png"
-      style="animation-delay: 2s;"
-      onclick="window.open('mailto:tomtom.inbar@gmail.com', '_blank')"
-      title="Gmail">
-
-    </section>
 
 
     <!-- Hidden sections, for those who click on 'puzzles' -->

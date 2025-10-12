@@ -11,7 +11,7 @@ body
   background-color: #1b1b1b;
   color: #e0e0e0;
   min-height: 100vh;
-  font-size: x-large;
+  font-size: large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -70,14 +70,14 @@ nav a:hover
 main 
 {
   flex-grow: 1;
-  padding: 20px;
+  padding: 32px;
 }
 
 section 
 {
   margin-bottom: 20px;
   border: 1px solid #777;
-  padding: 20px;
+  padding: 32px;
   border-radius: 64px;
 
 }
@@ -102,7 +102,6 @@ section
   {
     width: 100%;
     position: static;
-
     margin-top: 32px;
   }
   h1
@@ -189,16 +188,16 @@ section
 
 .im-app /* Apps icon in section 1 */
 {
-  border: 2px outset #666;
+  border: 2px inset #aaa;
   border-radius: 20px;
   width: 256px;
-  opacity: 0.75;
+  opacity: 0.6;
+  margin-right: 16px;
 }
 
 .im-app:hover /* Emphasize image's border on hover & a little pop */
 {
   border-color: #ccc;
-  animation: pop 0.25s ease-in-out;
   opacity: 1;
   cursor: pointer;
 }
@@ -209,7 +208,7 @@ section
         transform: scale(1);
     }
     50% {
-        transform: scale(1.01);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -220,13 +219,15 @@ section
 .inviting /* Icons with animation to draw attention */
 {
     opacity: 0.6;
-    animation: pulse 2s infinite;
+    margin-right: 16px;
+    border: 1px solid #333;
+    border-radius: 32px;
 }
 
 .inviting:hover
 {
     opacity: 1;
-    filter: drop-shadow(0px 0px 5px #e0e0e0);
+    filter: drop-shadow(0px 0px 2px violet);
 }
 
 @keyframes pulse 
@@ -245,8 +246,8 @@ section
 
 .remark
 {
-  font-size: small;
-  color: gray;
+  font-size: medium;
+  color: #888;
 }
 
 .animated-text /* Text which glows sometimes */
