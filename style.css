@@ -11,8 +11,8 @@ body
   background-color: #1b1b1b;
   color: #e0e0e0;
   min-height: 100vh;
-  font-size: large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 h1
@@ -136,15 +136,17 @@ section
 .im-brd /* Project image */
 {
   border: 2px solid #e0e0e0;
-  border-radius: 10px;
+  border-radius: 64px;
   width: 300px;
-  opacity: 0.75;
+  opacity: 0.6;
+
+  transition: border-radius 0.1s ease-in-out;
 }
 
 .im-brd:hover /* Emphasize image on hover */
 {
     opacity: 1;
-    filter: drop-shadow(0px 0px 5px #e0e0e0);
+    border-radius: 4px;
 }
 
 .image-container:hover .overlay /* Hide overlay on hover */
@@ -192,17 +194,17 @@ section
 .im-skill /* Skills icon in section 1 */
 {
   border: 2px solid #333;
-  border-radius: 25px;
+  border-radius: 16px;
+  margin-right: 4px
 }
 
 .im-app /* Apps icon in section 1 */
 {
   border: 2px inset #aaa;
   border-radius: 20px;
-  width: 256px;
+  width: 128px;
   opacity: 0.6;
   margin-right: 16px;
-
   animation: fade-in 3s ease;
 }
 
@@ -211,8 +213,17 @@ section
   border-color: #ccc;
   opacity: 1;
   cursor: pointer;
+  animation: fade-in 0s ease; /* Cancels the fade in animation */
+}
 
-  animation: fade-in 0s ease;
+#div-app
+{
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid #777;
+  padding: 16px;
+  margin-right: 16px;
+  border-radius: 32px;
 }
 
 @keyframes fade-in
@@ -246,27 +257,15 @@ section
     margin-right: 16px;
     border: 1px solid #555;
     border-radius: 32px;
+    padding: 8px;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 .inviting:hover
 {
     opacity: 1;
-    filter: drop-shadow(0px 0px 2px violet);
+    border-radius: 0%;
 }
-
-@keyframes pulse 
-{
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 
 .remark
 {
@@ -274,21 +273,9 @@ section
   color: #888;
 }
 
-.animated-text /* Text which glows sometimes */
+
+#btn-top 
 {
-  display: inline-block;
-  animation: glow 3s infinite;
-}
-
-@keyframes glow 
-{
-  40% {
-    text-shadow: 0 0 16px #e0e0e0;
-  }
-}
-
-
-#btn-top {
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -306,5 +293,5 @@ section
 #btn-top:hover 
 {
   animation: fade-in 0s ease-in;
-  opacity: 0.6;
+  opacity: 0.8;
 }
