@@ -131,10 +131,12 @@
         <h2>Technologies</h2>
         <p>Programming Languages</p>
         <img class='im-skill' loading="lazy" src="res/icons/java.png" title="Java">
+        <img class='im-skill' loading="lazy" src="res/icons/kotlin.png" title="Kotlin">
         <img class='im-skill' loading="lazy" src="res/icons/py.png" title="Python">
         <img class='im-skill' loading="lazy" src="res/icons/c.png" title="C">
         <img class='im-skill' loading="lazy" src="res/icons/cpp.png" title="C++">
         <img class='im-skill' loading="lazy" src="res/icons/js.png" title="JavaScript">
+        <img class='im-skill' loading="lazy" src="res/icons/ts.png" title="TypeScript">
         <p>Databases</p>
         <img class='im-skill' loading="lazy" src="res/icons/fbase.png" title="Firebase">
         <img class='im-skill' loading="lazy" src="res/icons/mongo.png" title="MongoDB">
@@ -153,7 +155,7 @@
         <img class='im-skill' loading="lazy" src="res/icons/android.png" title="Android">
 
         <!-- Easter egg: Imply clickable with cursor and have an on-click effect -->
-        <img id="soundHover" class='im-skill' loading="lazy" src="res/icons/feizey.png" title="My nephew" style="cursor: pointer;">
+        <img id="soundHover" class='im-skill nephew' loading="lazy" src="res/icons/feizey.png" title="Nephew" style="cursor: pointer;">
         <audio id='mySound' src='res/sfx/bark.mp3'/>
 
         <script>
@@ -172,10 +174,24 @@
 
     <!-- Projects -->
     <section id="section2">
-      <h2>More Projects</h2>
-      <p>Click an image for additional information</p>
+      <h2>Projects & Contributions</h2>
       <div class='flex-projects'>
         
+        <!-- Apache Airflow Contributon -->
+        <div class="project-container" style='width: 300px;' >
+          <div class="image-container">
+            <a title='GitHub Link'
+             href='https://github.com/apache/airflow/commits?author=Tomi-1997'
+             target='_blank' style='cursor: pointer;'>
+            
+            <img class='im-brd' src='res/images/airflow.svg' loading='lazy' alt=''>
+            </a>
+            <div class="overlay">Open Source Contribution</div>
+          </div>
+          <img class='im-brd-small' src='res/icons/ts.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/linux.png' loading='lazy'  alt=''>
+          <img class='im-brd-small' src='res/icons/docker.png' loading='lazy'  alt=''>
+        </div>
 
         <!-- Embedded -->
         <div class="project-container" style='width: 300px;' >
@@ -274,6 +290,10 @@
      | tomtom.inbar@gmail.com
      | Tom Inbar, 2025. All rights reserved.
      | Back to <a href="#">top</a>
+     <br>Apache Airflow, Apache, Airflow, the Airflow logo, and the Apache logo
+     <br>are either registered trademarks or trademarks of 
+     <a href="https://apache.org/">The Apache Software Foundation</a>.
+
     </p>
 
   </main>

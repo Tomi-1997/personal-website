@@ -102,6 +102,18 @@ nav a:hover
   color: black;
 }
 
+a 
+{
+  color: var(--primary-color);
+  text-decoration-color: currentcolor;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover
+{
+  color: var(--secondary-color);
+}
+
 main 
 {
   flex-grow: 1;
@@ -192,6 +204,7 @@ section
   border: 2px solid #e0e0e0;
   border-radius: 64px;
   width: 300px;
+  height: 300px;
   opacity: 0.6;
 
   transition: border-radius 0.1s ease-in-out;
@@ -242,14 +255,23 @@ section
   border-radius: 25px;
   margin-top: 10px;
   width: 30%;
-  opacity: 0.9;
+}
+
+.im-brd-small:hover
+{
+  border: 2px solid #555;
 }
 
 .im-skill /* Skills icon in section 1 */
 {
   border: 2px solid #333;
-  border-radius: 16px;
-  margin-right: 4px
+  border-radius: 32px;
+  margin-right: 4px;
+}
+
+.im-skill:hover
+{
+  border: 2px solid #555;
 }
 
 .im-app /* Apps icon in section 1 */
@@ -322,10 +344,14 @@ section
 
 .remark
 {
-  font-size: medium;
+  font-size: smaller;
   color: #888;
 }
 
+.nephew:hover
+{
+  transform: skewX(5deg);
+}
 
 #btn-top 
 {
